@@ -1,0 +1,147 @@
+body {
+	margin: 0;
+	font-size: 2rem;
+	display: block;
+	flex: 1;
+	min-height: 100vh;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	}
+
+.brand {
+	font-size: 25px;
+	font-weight: bold;
+	position: absolute;
+	border-radius: 50%;
+	align-items: center;
+	display: flex;
+	top: 160px;
+	left: 36%;
+	justify-content: center;
+	color: red;
+	
+}
+
+  .clock {
+	width: 300px;
+	height: 300px;
+	border: 12px solid purple;
+	border-radius: 50%;
+	margin: 0 auto;
+	position: relative;
+	padding: 1rem;
+		
+  }
+
+  .clock {
+	width: 15rem;
+	height: 15rem;
+	border-radius: 50%;
+	margin: 50px auto;
+	position: relative;
+	padding: 1rem;
+	background-image: url('./JD.jpg');
+	background-size: 100%;
+	transition: transform 0.3s ease-out;
+  }
+  
+
+  .clock span {
+	position: absolute;
+	transform: rotate(calc(30deg * var(--i)));
+	inset: 12px;
+	text-align: center;
+	
+  }
+
+  .clock span b {
+	transform: rotate(calc(-30deg * var(--i)));
+	display: inline-block;
+	font-size: 20px;
+
+  }
+
+  .hand.hour-hand {
+	background: black;
+	height: 9px;
+	width: 20%;
+	
+
+  }
+  .hand.min-hand { 
+	background: rgb(202, 117, 6);
+	height: 6px;
+	width: 30%;
+	
+
+  }
+  .hand.second-hand {
+	background: #cc0000;
+	height: 3px;
+	width: 40%;
+  }
+
+	.hand {
+		width: 50%;
+		right: 50%;
+		height: 6px;
+		position: absolute;
+		top: 50%;
+		border-radius: 6px;
+		transform-origin: 100%;
+		transform: rotate(90deg);
+		transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+	  }
+
+	  .nav {
+		display: flex;
+		justify-content: center;
+		position: fixed;
+		top: 0;
+		left: 2;
+		right: 2;
+		width: 100%;
+		background: rgb(26, 25, 25);
+		box-shadow: 0 2px 0 rgba(48, 48, 48, 0.4);
+		
+	}
+	
+	.nav-list {
+		display: flex;
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+	
+	@media (max-width: 480px) {
+		.nav {
+			justify-content: center;
+		}
+		.nav-list {
+			margin: 2 1rem;
+			color: rgb(76, 26, 212);
+		}
+	}
+	
+	.nav-list a {
+		margin-left: 2rem;
+		margin-right: 2rem;
+		padding: 2rem;
+		font-size: 2rem;
+		
+	}
+	
+	.nav-list a:hover {
+		background: rgb(12, 12, 12);
+		border-bottom: 1px solid #afb833;
+		
+	}
+	
+	#nav-link {
+		text-decoration: none;
+		margin: 0 auto;
+		padding: 0 auto;
+		color: white;
+	}
+	
+	
